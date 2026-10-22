@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antojos 509 — Menú</title>
+<style>
+  :root{
+    --txt:#fff8ee; --mut:#e8d9c3; --gold:#e9a13b; --gold2:#ffcf7d;
+    --card:rgba(20,14,9,.62); --line:rgba(255,207,125,.28);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;background:#100d0b}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:transparent;color:var(--txt);line-height:1.55}
+  /* FONDO FIJO: capa anclada a la pantalla, igual que en Epicentro Financiero.
+     El contenido sube al desplazar, el fondo no se mueve. Funciona en Safari de iPhone. */
+  .bgfx{position:fixed;inset:0;z-index:0;overflow:hidden;background:linear-gradient(180deg,rgba(10,7,5,.62),rgba(10,7,5,.72)),url('img/fondo-pizarra.jpg') center/cover no-repeat}
+  body>*:not(.bgfx){position:relative;z-index:1}
+  .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+  .draft{display:inline-block;background:rgba(233,161,59,.16);border:1px solid var(--line);color:var(--gold2);font-size:12.5px;font-weight:700;letter-spacing:.4px;padding:6px 12px;border-radius:999px;margin-top:18px}
+  header{text-align:center;padding:26px 18px 8px}
+  .logo{width:132px;height:132px;margin:10px auto 6px;border:2.5px solid rgba(255,248,238,.85);border-radius:50%;display:grid;place-items:center;padding:10px}
+  .logo .name{font-family:"Snell Roundhand","Brush Script MT","Segoe Script",cursive;font-size:37px;line-height:1;color:#fff}
+  .logo .num{font-size:15px;letter-spacing:6px;color:var(--gold2);font-weight:800;margin-top:2px}
+  h1{font-size:30px;line-height:1.15;margin-top:10px}
+  h1 .gold{color:var(--gold2)}
+  .tag{color:var(--mut);font-size:16px;margin-top:8px}
+  nav{position:sticky;top:0;z-index:5;padding:12px 0;background:linear-gradient(180deg,rgba(10,7,5,.88),rgba(10,7,5,0))}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 18px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chips a{flex:none;color:var(--txt);text-decoration:none;font-size:14px;font-weight:700;background:var(--card);border:1px solid var(--line);padding:9px 15px;border-radius:999px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  section{padding:20px 0 6px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 20px;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px)}
+  h2{font-family:"Snell Roundhand","Brush Script MT","Segoe Script",cursive;font-weight:400;font-size:34px;color:var(--gold);text-align:center;margin-bottom:6px}
+  .note{text-align:center;color:var(--mut);font-size:13.5px;margin-bottom:14px}
+  .photo-slot{border:1.5px dashed rgba(255,207,125,.45);border-radius:14px;color:var(--gold2);text-align:center;font-size:13.5px;font-weight:700;padding:16px 10px;margin-bottom:16px;background:rgba(0,0,0,.25)}
+  .item{display:flex;align-items:baseline;gap:8px;padding:7px 0;font-size:16.5px}
+  .item .dots{flex:1;border-bottom:2px dotted rgba(255,248,238,.35);transform:translateY(-4px)}
+  .item .price{color:var(--gold2);font-weight:800;white-space:nowrap}
+  .pending{color:var(--mut)}
+  .hero-slot{border:1.5px dashed rgba(255,207,125,.5);border-radius:18px;text-align:center;padding:30px 16px;background:rgba(0,0,0,.28)}
+  .hero-slot .big{font-family:"Snell Roundhand","Brush Script MT","Segoe Script",cursive;font-size:30px;color:var(--gold)}
+  footer{text-align:center;color:var(--mut);font-size:14px;padding:34px 18px 46px}
+  footer .row{margin-top:6px}
+</style>
+</head>
+<body>
+<div class="bgfx" aria-hidden="true"></div>
+
+<header class="wrap">
+  <span class="draft">BORRADOR — ESPERANDO EL MENÚ REAL</span>
+  <div class="logo"><div><div class="name">Antojos</div><div class="num">509</div></div></div>
+  <h1>Nuestro <span class="gold">menú</span></h1>
+  <p class="tag">Desliza hacia arriba: el fondo se queda fijo y el menú va subiendo sobre él, igual que en la página de Epicentro Financiero.</p>
+</header>
+
+<nav><div class="chips wrap" style="padding-left:18px;padding-right:18px">
+  <a href="#frias">Bebidas Frías</a>
+  <a href="#calientes">Bebidas Calientes</a>
+  <a href="#salado">Salado</a>
+  <a href="#dulce">Dulce</a>
+  <a href="#extra">Extra</a>
+</div></nav>
+
+<main class="wrap">
+
+  <section id="estrella"><div class="card">
+    <div class="hero-slot">
+      <div class="big">Plato estrella</div>
+      <p class="note" style="margin:6px 0 0">Aquí va la foto grande del plato principal, al centro, como la hamburguesa de la referencia. Se pone cuando llegue el menú.</p>
+    </div>
+  </div></section>
+
+  <section id="frias"><div class="card">
+    <h2>Bebidas Frías</h2>
+    <p class="note">Sección del modelo de referencia — platos pendientes</p>
+    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  </div></section>
+
+  <section id="calientes"><div class="card">
+    <h2>Bebidas Calientes</h2>
+    <p class="note">Sección del modelo de referencia — platos pendientes</p>
+    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  </div></section>
+
+  <section id="salado"><div class="card">
+    <h2>Salado</h2>
+    <p class="note">Sección del modelo de referencia — platos pendientes</p>
+    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  </div></section>
+
+  <section id="dulce"><div class="card">
+    <h2>Dulce</h2>
+    <p class="note">Sección del modelo de referencia — platos pendientes</p>
+    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  </div></section>
+
+  <section id="extra"><div class="card">
+    <h2>Extra</h2>
+    <p class="note">Sección del modelo de referencia — platos pendientes</p>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  </div></section>
+
+</main>
+
+<footer>
+  <div><strong style="color:var(--gold2)">Antojos 509</strong></div>
+  <div class="row">📍 Dirección — pendiente</div>
+  <div class="row">🕒 Horario — pendiente</div>
+  <div class="row">📞 Teléfono / WhatsApp — pendiente</div>
+</footer>
+
+</body>
+</html>
