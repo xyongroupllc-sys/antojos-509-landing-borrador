@@ -49,6 +49,33 @@
 </style>
 </head>
 <body>
+<div id="gate" style="position:fixed;inset:0;z-index:9999;background:#171310;display:flex;align-items:center;justify-content:center;padding:20px">
+  <div style="max-width:360px;width:100%;text-align:center;color:#f3e9d2;font-family:Georgia,serif">
+    <div style="font-size:30px;margin-bottom:6px">Antojos 509 Bistro</div>
+    <p style="font-size:15px;opacity:.85">Vista privada del borrador del menú.<br>Escribe la clave de acceso:</p>
+    <input id="gate-pw" type="password" inputmode="text" autocomplete="off" placeholder="Clave" style="width:100%;box-sizing:border-box;padding:13px;border-radius:10px;border:1px solid #8a6d3b;background:#241d16;color:#fff;font-size:17px;text-align:center">
+    <button id="gate-btn" style="margin-top:12px;width:100%;padding:13px;border:0;border-radius:10px;background:#c9a227;color:#1c1508;font-size:17px;font-weight:bold">Entrar</button>
+    <p id="gate-msg" style="color:#e08a8a;font-size:14px;min-height:20px;margin-top:10px"></p>
+  </div>
+</div>
+<script>
+(function(){
+  var HASH='51f1c11d4d1dc4abb115f6c846053cee21308d9e21fccc78cdb3d07b2c711422';
+  var EXPIRA=Date.parse('2026-10-30T00:00:00-07:00');
+  var gate=document.getElementById('gate'), msg=document.getElementById('gate-msg');
+  function abrir(){ gate.style.display='none'; try{sessionStorage.setItem('a509ok','1');}catch(e){} }
+  if(Date.now()>EXPIRA){ msg.textContent='Este acceso ya venció. Pide un enlace nuevo.'; }
+  else { try{ if(sessionStorage.getItem('a509ok')==='1'){ gate.style.display='none'; } }catch(e){} }
+  async function sha(t){ var b=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join(''); }
+  async function intentar(){
+    if(Date.now()>EXPIRA){ msg.textContent='Este acceso ya venció. Pide un enlace nuevo.'; return; }
+    var v=document.getElementById('gate-pw').value.trim().toLowerCase();
+    if(await sha(v)===HASH){ abrir(); } else { msg.textContent='Clave incorrecta.'; }
+  }
+  document.getElementById('gate-btn').addEventListener('click', intentar);
+  document.getElementById('gate-pw').addEventListener('keydown', function(e){ if(e.key==='Enter') intentar(); });
+})();
+</script>
 <div class="bgfx" aria-hidden="true"></div>
 
 <header class="wrap">
