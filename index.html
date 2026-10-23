@@ -61,7 +61,7 @@
 <script>
 (function(){
   var HASH='51f1c11d4d1dc4abb115f6c846053cee21308d9e21fccc78cdb3d07b2c711422';
-  var EXPIRA=Date.parse('2026-10-30T00:00:00-07:00');
+  var EXPIRA=Date.parse('2026-10-23T17:13:00-07:00');
   var gate=document.getElementById('gate'), msg=document.getElementById('gate-msg');
   function abrir(){ gate.style.display='none'; try{sessionStorage.setItem('a509ok','1');}catch(e){} }
   if(Date.now()>EXPIRA){ msg.textContent='Este acceso ya venció. Pide un enlace nuevo.'; }
