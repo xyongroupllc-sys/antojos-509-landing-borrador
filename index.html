@@ -79,37 +79,39 @@
 <div class="bgfx" aria-hidden="true"></div>
 
 <header class="wrap">
-  <span class="draft">BORRADOR — MENÚ PARCIAL · FALTAN PLATOS Y PRECIOS</span>
+  <span class="draft">BORRADOR — MENÚ OFICIAL CARGADO</span>
   <div class="logo"><div><div class="name">Antojos</div><div class="num">509</div></div></div>
   <h1>Nuestro <span class="gold">menú</span></h1>
-  <p class="tag">Comida venezolana. Desliza hacia arriba: el fondo se queda fijo y el menú va subiendo sobre él, igual que en la página de Epicentro Financiero.</p>
+  <p class="tag">Comida venezolana tradicional en Kennewick. Desliza: el fondo se queda fijo y el menú sube sobre él.</p>
 </header>
 
 <nav><div class="chips wrap" style="padding-left:18px;padding-right:18px">
   <a href="#especiales">Platos Especiales</a>
-  <a href="#frias">Bebidas Frías</a>
-  <a href="#calientes">Bebidas Calientes</a>
-  <a href="#salado">Salado</a>
-  <a href="#dulce">Dulce</a>
-  <a href="#extra">Extra</a>
+  <a href="#desayuno">Desayuno</a>
+  <a href="#entradas">Entradas</a>
+  <a href="#sopas">Sopas</a>
+  <a href="#especialidades">Especialidades</a>
+  <a href="#pizzas">Pizzas</a>
+  <a href="#bebidas">Bebidas</a>
+  <a href="#cafe">Café</a>
+  <a href="#vinos">Vinos</a>
+  <a href="#cocteles">Cócteles</a>
 </div></nav>
 
 <main class="wrap">
-
   <section id="estrella"><div class="card">
-    <div class="hero-slot">
-      <div class="big">Plato estrella</div>
-      <p class="note" style="margin:6px 0 0">Aquí va la foto grande del plato principal, al centro, como la hamburguesa de la referencia. Se pone cuando llegue el menú.</p>
+    <div class="hero-slot" style="border-style:solid;padding:20px 16px">
+      <div class="big">★ Plato estrella</div>
+      <p style="font-size:20px;font-weight:800;margin-top:6px">Pabellón Tradicional · $22.00</p>
+      <p class="note" style="margin:6px 0 12px">El plato nacional de Venezuela: carne mechada, arroz, caraotas negras, plátano frito, huevo, queso fresco y aguacate.</p>
+      <video controls playsinline preload="metadata" poster="img/pabellon-poster.jpg" style="width:100%;max-height:480px;border-radius:14px;background:#000"><source src="video/pabellon.mp4" type="video/mp4"></video>
+      <div class="steps"><span>Video del plato</span><span>1 · Ingredientes</span><span>2 · Preparación</span><span>3 · Emplatado final</span></div>
     </div>
   </div></section>
 
   <section id="especiales"><div class="card">
     <h2>Platos Especiales</h2>
     <p class="note">Cada plato especial tendrá su video: los ingredientes pasan por la preparación y termina con el emplatado final, ya servido.</p>
-    <div class="video-slot">
-      <video controls playsinline preload="metadata" poster="img/pabellon-poster.jpg" style="width:100%;max-height:480px;border-radius:14px;background:#000"><source src="video/pabellon.mp4" type="video/mp4"></video>
-      <div class="steps"><span>Muestra: Pabellón Tradicional</span><span>1 · Ingredientes</span><span>2 · Preparación</span><span>3 · Emplatado final</span></div>
-    </div>
     <div class="video-slot">
       <div class="video-frame">▶ Video: Paella Valenciana<br><span style="font-size:13px;font-weight:600;color:var(--mut)">Pendiente — se graba cuando llegue el menú</span></div>
       <div class="steps"><span>1 · Ingredientes</span><span>2 · Preparación</span><span>3 · Emplatado final</span></div>
@@ -121,57 +123,152 @@
     </div>
   </div></section>
 
-  <section id="frias"><div class="card">
-    <h2>Bebidas Frías</h2>
-    <p class="note">Sección del modelo de referencia — platos pendientes</p>
-    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  <section id="desayuno"><div class="card">
+    <h2>Desayuno</h2>
+    <p class="note">Arepas, empanadas y pastelitos, como en casa</p>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Arepas</p>
+    <div class="item"><span>Arepa Pabellón</span><span class="dots"></span><span class="price">$18.00</span></div>
+    <div class="item"><span>Arepa Chicharrón</span><span class="dots"></span><span class="price">$16.00</span></div>
+    <div class="item"><span>Arepa Pollo Mechado</span><span class="dots"></span><span class="price">$14.00</span></div>
+    <div class="item"><span>Arepa Reina Pepiada</span><span class="dots"></span><span class="price">$14.00</span></div>
+    <div class="item"><span>Arepa Plátano y Queso</span><span class="dots"></span><span class="price">$13.00</span></div>
+    <div class="item"><span>Arepa Vegana</span><span class="dots"></span><span class="price">$13.00</span></div>
+    <div class="item"><span>Arepa Queso</span><span class="dots"></span><span class="price">$12.00</span></div>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Empanadas</p>
+    <div class="item"><span>Empanada de Pabellón</span><span class="dots"></span><span class="price">$9.00</span></div>
+    <div class="item"><span>Empanada de Camarón</span><span class="dots"></span><span class="price">$9.00</span></div>
+    <div class="item"><span>Empanada de Cazón</span><span class="dots"></span><span class="price">$9.00</span></div>
+    <div class="item"><span>Empanada de Carne Mechada</span><span class="dots"></span><span class="price">$8.00</span></div>
+    <div class="item"><span>Empanada de Pollo Mechado</span><span class="dots"></span><span class="price">$8.00</span></div>
+    <div class="item"><span>Empanada de Carne Molida</span><span class="dots"></span><span class="price">$8.00</span></div>
+    <div class="item"><span>Empanada de Queso</span><span class="dots"></span><span class="price">$7.00</span></div>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Pastelitos andinos</p>
+    <div class="item"><span>Pastelito de Pollo Mechado</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <div class="item"><span>Pastelito de Carne Molida</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <div class="item"><span>Pastelito de Papa y Queso</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <div class="item"><span>Pastelito de Pizza</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Más del desayuno</p>
+    <div class="item"><span>Cachapa con Queso de Mano</span><span class="dots"></span><span class="price">$16.00</span></div>
+    <div class="item"><span>Cachapa Especial</span><span class="dots"></span><span class="price">$22.00</span></div>
+    <div class="item"><span>Panquecas</span><span class="dots"></span><span class="price">$18.00</span></div>
+    <div class="item"><span>Cachitos</span><span class="dots"></span><span class="price">$8.00</span></div>
+    <div class="item"><span>Taquito de Hojaldre de Queso y Espinaca</span><span class="dots"></span><span class="price">$8.00</span></div>
   </div></section>
 
-  <section id="calientes"><div class="card">
-    <h2>Bebidas Calientes</h2>
-    <p class="note">Sección del modelo de referencia — platos pendientes</p>
-    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  <section id="entradas"><div class="card">
+    <h2>Entradas y Tapas</h2>
+    <p class="note">Para empezar y compartir</p>
+    <div class="item"><span>Tequeños</span><span class="dots"></span><span class="price">$12.00</span></div>
+    <div class="item"><span>Trío Mini Empanadas</span><span class="dots"></span><span class="price">$12.00</span></div>
+    <div class="item"><span>Brusquetas de Salmón</span><span class="dots"></span><span class="price">$14.00</span></div>
+    <div class="item"><span>Tortilla Española</span><span class="dots"></span><span class="price">$17.00</span></div>
+    <div class="item"><span>Ensalada César</span><span class="dots"></span><span class="price">$16.00</span></div>
+    <div class="item"><span>Ensalada Capresa</span><span class="dots"></span><span class="price">$16.00</span></div>
+    <div class="item"><span>Hummus Mediterráneo con Focaccia</span><span class="dots"></span><span class="price">$19.00</span></div>
+    <div class="item"><span>Ensalada Primavera</span><span class="dots"></span><span class="price"></span></div>
+    <div class="item"><span>Carpaccio de Lomito</span><span class="dots"></span><span class="price"></span></div>
   </div></section>
 
-  <section id="salado"><div class="card">
-    <h2>Salado</h2>
-    <p class="note">Adelanto parcial confirmado — faltan platos y todos los precios del menú completo</p>
-    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
-    <div class="item"><span>Pabellón Criollo</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Empanadas de carne mechada (deshebrada)</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Empanadas de caraotas (frijoles negros)</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Empanadas de carne molida</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Empanadas de pollo</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Empanadas de queso</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Cachapas con queso de mano</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Tequeños (ración de 6)</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Arepas de Pollo Mechado</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Trío Mini Empanadas</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span>Paella Valenciana</span><span class="dots"></span><span class="price">$ —</span></div>
+  <section id="sopas"><div class="card">
+    <h2>Sopas y Cremas</h2>
+    <div class="item"><span>Crema de Auyama</span><span class="dots"></span><span class="price">$12.00</span></div>
+    <div class="item"><span>Sopa de Cebolla Gratinada</span><span class="dots"></span><span class="price">$14.00</span></div>
+    <div class="item"><span>Sopa de Costilla de Res</span><span class="dots"></span><span class="price">$22.00</span></div>
   </div></section>
 
-  <section id="dulce"><div class="card">
-    <h2>Dulce</h2>
-    <p class="note">Adelanto parcial — faltan postres y precios del menú completo</p>
-    <div class="photo-slot">📷 Foto de la sección — pendiente</div>
-    <div class="item"><span>Quesillo</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  <section id="especialidades"><div class="card">
+    <h2>Especialidades</h2>
+    <p class="note">Los platos fuertes de la casa</p>
+    <div class="item"><span>Pabellón Tradicional</span><span class="dots"></span><span class="price">$22.00</span></div>
+    <div class="item"><span>Paella Valenciana (para 2 personas)</span><span class="dots"></span><span class="price">$48.00</span></div>
+    <div class="item"><span>NY Steak Deluxe 14 oz</span><span class="dots"></span><span class="price">$38.00</span></div>
+    <div class="item"><span>Risotto de Camarón</span><span class="dots"></span><span class="price">$28.00</span></div>
+    <div class="item"><span>Fettuccine Fruto di Mare</span><span class="dots"></span><span class="price">$27.00</span></div>
+    <div class="item"><span>Piccata Milanesa de Pollo</span><span class="dots"></span><span class="price">$26.00</span></div>
+    <div class="item"><span>Risotto Fungi</span><span class="dots"></span><span class="price">$22.00</span></div>
+    <div class="item"><span>Pasticho / Lasagna</span><span class="dots"></span><span class="price">$22.00</span></div>
+    <div class="item"><span>Pasta Bolognesa</span><span class="dots"></span><span class="price">$20.00</span></div>
   </div></section>
 
-  <section id="extra"><div class="card">
-    <h2>Extra</h2>
-    <p class="note">Sección del modelo de referencia — platos pendientes</p>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
-    <div class="item"><span class="pending">Plato pendiente</span><span class="dots"></span><span class="price">$ —</span></div>
+  <section id="pizzas"><div class="card">
+    <h2>Pizzas</h2>
+    <p class="note">Masa artesanal — sin sustituciones en las pizzas de la casa</p>
+    <div class="item"><span>Mortadela y Pistacho</span><span class="dots"></span><span class="price">$26.00</span></div>
+    <div class="item"><span>Pizza Dulce Mare</span><span class="dots"></span><span class="price">$26.00</span></div>
+    <div class="item"><span>Pizza Burrata</span><span class="dots"></span><span class="price">$24.00</span></div>
+    <div class="item"><span>Pizza Morning Boss</span><span class="dots"></span><span class="price">$24.00</span></div>
+    <div class="item"><span>Pizza Pepperoni Extreme</span><span class="dots"></span><span class="price">$22.00</span></div>
+    <div class="item"><span>Pizza Margherita</span><span class="dots"></span><span class="price">$20.00</span></div>
+    <div class="item"><span>Pizza Marinara</span><span class="dots"></span><span class="price">$15.00</span></div>
+  </div></section>
+
+  <section id="acompanantes"><div class="card">
+    <h2>Acompañantes</h2>
+    <div class="item"><span>Papas Rústicas</span><span class="dots"></span><span class="price">$7.00</span></div>
+    <div class="item"><span>Vegetales Salteados</span><span class="dots"></span><span class="price">$7.00</span></div>
+    <div class="item"><span>Papas Fritas</span><span class="dots"></span><span class="price">$6.00</span></div>
+    <div class="item"><span>Ensalada de la Casa</span><span class="dots"></span><span class="price"></span></div>
+  </div></section>
+
+  <section id="bebidas"><div class="card">
+    <h2>Bebidas</h2>
+    <p class="note">Jugos naturales: frutos rojos y parchita</p>
+    <div class="item"><span>Chicha</span><span class="dots"></span><span class="price">$8.00</span></div>
+    <div class="item"><span>Jugos Naturales</span><span class="dots"></span><span class="price">$6.00</span></div>
+    <div class="item"><span>Papelón con Limón</span><span class="dots"></span><span class="price">$6.00</span></div>
+    <div class="item"><span>Frescolita</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <div class="item"><span>Malta</span><span class="dots"></span><span class="price">$5.00</span></div>
+  </div></section>
+
+  <section id="cafe"><div class="card">
+    <h2>Café</h2>
+    <p class="note">Leche regular, de almendra o de avena</p>
+    <div class="item"><span>Espresso</span><span class="dots"></span><span class="price">$5.00</span></div>
+    <div class="item"><span>Americano chico / grande</span><span class="dots"></span><span class="price">$4.00 / 6.00</span></div>
+    <div class="item"><span>Latte Macchiato chico / grande</span><span class="dots"></span><span class="price">$4.00 / 8.00</span></div>
+    <div class="item"><span>Capuchino chico / grande</span><span class="dots"></span><span class="price">$4.00 / 8.00</span></div>
+    <div class="item"><span>Mocachino chico / grande</span><span class="dots"></span><span class="price">$4.00 / 8.00</span></div>
+  </div></section>
+
+  <section id="vinos"><div class="card">
+    <h2>Vinos</h2>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Blancos · copa / botella</p>
+    <div class="item"><span>Terra Blanca Albariño</span><span class="dots"></span><span class="price">$10 / 34</span></div>
+    <div class="item"><span>Fidelitas Sauvignon Blanc</span><span class="dots"></span><span class="price">$12 / 40</span></div>
+    <div class="item"><span>L'Ecole Chardonnay</span><span class="dots"></span><span class="price">$13 / 43</span></div>
+    <div class="item"><span>Clean Slate Riesling</span><span class="dots"></span><span class="price">$9 / 30</span></div>
+    <div class="item"><span>Zardetto Prosecco</span><span class="dots"></span><span class="price">$9 / 30</span></div>
+    <div class="item"><span>Vijra Moscato</span><span class="dots"></span><span class="price">$12 / 40</span></div>
+    <div class="item"><span>Elk Cove Pinot Gris</span><span class="dots"></span><span class="price">$13.75 / 42</span></div>
+    <div class="item"><span>Moscato D'Asti</span><span class="dots"></span><span class="price">$14 / 38</span></div>
+    <div class="item"><span>Clean Slate Riesling 2024</span><span class="dots"></span><span class="price">$12 / 28</span></div>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Tintos · copa / botella</p>
+    <div class="item"><span>Barnard Griffin Merlot</span><span class="dots"></span><span class="price">$12 / 40</span></div>
+    <div class="item"><span>Marchesi Gresy Barbera D'Asti</span><span class="dots"></span><span class="price">$13 / 43</span></div>
+    <div class="item"><span>Zuccardi A Malbec</span><span class="dots"></span><span class="price">$11 / 37</span></div>
+    <div class="item"><span>Alto Moncayo «Zismero» Garnacha</span><span class="dots"></span><span class="price">$12 / 40</span></div>
+    <div class="item"><span>Garzón Tannat</span><span class="dots"></span><span class="price">$13 / 43</span></div>
+    <div class="item"><span>Duorum Ruby Port</span><span class="dots"></span><span class="price">$13 / 43</span></div>
+    <div class="item"><span>Gresy Barbera D'Asti</span><span class="dots"></span><span class="price">$12 / 40</span></div>
+    <div class="item"><span>Lapostolle Cuvée Alexandre Cabernet</span><span class="dots"></span><span class="price">$16.50 / 50</span></div>
+    <div class="item"><span>Volver Tempranillo</span><span class="dots"></span><span class="price">$12.50 / 45</span></div>
+  </div></section>
+
+  <section id="cocteles"><div class="card">
+    <h2>Cócteles y Rones</h2>
+    <p class="note">Solo para mayores de 21 años</p>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Cócteles</p>
+    <div class="item"><span>Cuba Libre</span><span class="dots"></span><span class="price">$15.00</span></div>
+    <div class="item"><span>Mojito</span><span class="dots"></span><span class="price">$15.00</span></div>
+    <div class="item"><span>Tequila Shot</span><span class="dots"></span><span class="price">$15.00</span></div>
+    <div class="item"><span>Margarita</span><span class="dots"></span><span class="price">$15.00 / 17.00</span></div>
+    <div class="item"><span>Piña Colada</span><span class="dots"></span><span class="price">$14.00 / 16.00</span></div>
+    <div class="item"><span>Mimosa</span><span class="dots"></span><span class="price">$14.00</span></div>
+    <p class="note" style="text-align:left;font-weight:800;color:var(--gold2);margin:14px 0 4px">Rones y whisky</p>
+    <div class="item"><span>Carúpano (ron)</span><span class="dots"></span><span class="price">$20.00</span></div>
+    <div class="item"><span>Diplomático (ron)</span><span class="dots"></span><span class="price">$15.00</span></div>
+    <div class="item"><span>Buchanan's 12 años (whisky)</span><span class="dots"></span><span class="price">$15.00</span></div>
+    <div class="item"><span>Santa Teresa 1796 (ron)</span><span class="dots"></span><span class="price">$14.00</span></div>
   </div></section>
 
 </main>
@@ -179,8 +276,8 @@
 <footer>
   <div><strong style="color:var(--gold2)">Antojos 509 Bistro</strong></div>
   <div class="row">📍 5453 Ridgeline Dr. Kennewick, WA</div>
-  <div class="row">🕒 Horario — pendiente</div>
-  <div class="row">📞 Teléfono / WhatsApp — pendiente</div>
+  <div class="row">🌐 www.antojosfood.com</div>
+  <div class="row">📞 Teléfono y horario — por confirmar</div>
 </footer>
 
 </body>
